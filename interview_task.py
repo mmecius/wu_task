@@ -38,8 +38,9 @@ assign_Btn = browser.find_element(By.ID,"welcome")
 assign_Btn.click()
 
 #Logout from system
-#btn_leave_site = browser.find_element_by_xpath("//div@welcome-menu/ul/li[1]")
-#btn_leave_site.click()
+sleep(1)
+buttonLogout = browser.find_element_by_xpath("//div[@id='welcome-menu']/ul/li[2]/a")
+buttonLogout.click()
 
 #Close browser
-browser.close()
+#browser.close()
